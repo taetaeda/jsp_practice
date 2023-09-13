@@ -12,10 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 public class ResponseServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    
     public ResponseServlet() {
         super();
-        
     }
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,12 +25,14 @@ public class ResponseServlet extends HttpServlet {
 		int age = Integer.parseInt(request.getParameter("customerAge"));
 		
 		if(age >= 20) {
-			//성인 페이지로 이동시키고 싶다.
-			response.sendRedirect("/JspBasic/response/res_adult.jsp");			
+			//성인 페이지로 이동시키고 싶어요.
+			response.sendRedirect("/JspBasic/response/res_adult.jsp");
 		} else {
 			//미성년자 페이지로 이동시키고 싶어요.
 			response.sendRedirect("/JspBasic/response/res_underage.jsp");
+			
 		}
+		
 	}
 
 }
