@@ -78,3 +78,23 @@ public class BoardVO {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
